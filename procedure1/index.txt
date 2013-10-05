@@ -1,9 +1,16 @@
 title.txt
 
+# would be nice to generate this based available test cases?
 toc.txt
 
 requirements.txt
 
+setup.txt 
+
+# this needs to be generated and/or site specific
 tc01.txt
+
+# this needs to be generated from results.csv
+results.txt
 
 signoff.txt

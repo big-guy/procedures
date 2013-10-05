@@ -1,25 +1,26 @@
 
-# Requirements #
+## Requirements ##
 
-[AID001.001.001]: #AID001.001.001 "Requirement text 1."
+TODO: This needs to be reformatted
 
-* <a id="ID001.001.001"/> ID001.001.001: Requirement text 1.
-                      
-* <a id="ID001.001.002"/> ID001.001.002: Requirement text 2.
-                      
-* <a id="ID001.001.003"/> ID001.001.003: Requirement text 3.
-                      
-* <a id="ID001.001.004"/> ID001.001.004: Requirement text 4.
-                      
-* <a id="ID001.001.005"/> ID001.001.005: Requirement text 5.
-                      
-* <a id="ID001.001.006"/> ID001.001.006: Requirement text 6.
-                      
-* <a id="ID001.001.007"/> ID001.001.007: Requirement text 7.
-                      
-* <a id="ID001.002.001"/> ID001.002.001: Requirement text 8.
-                      
-* <a id="ID001.002.002"/> ID001.002.002: Requirement text 9. 
-                      
-* <a id="ID002.001.001"/> ID002.001.001: Requirement text 10. 
+<a id="ID001.001.001"/> ID001.001.001
+: Requirement text 1.
+
+[ID001.001.002]: #ID001.001.002 "Requirement text 2."
+
+[ID001.001.003]: #ID001.001.003 "Requirement text 3."
+
+[ID001.001.004]: #ID001.001.004 "Requirement text 4."
+
+[ID001.001.005]: #ID001.001.005 "Requirement text 5."
+
+[ID001.001.006]: #ID001.001.006 "Requirement text 6."
+
+[ID001.001.007]: #ID001.001.007 "Requirement text 7."
+
+[ID001.002.001]: #ID001.002.001 "Requirement text 8."
+
+[ID001.002.002]: #ID001.002.002 "Requirement text 9." 
+
+[ID002.001.001]: #ID002.001.001 "Requirement text 10" 
 
