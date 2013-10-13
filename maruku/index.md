@@ -1,10 +1,11 @@
-CSS: style.css 
+CSS: style.css
+
 
 # Final Acceptance Test # 
 
 |Name of Procedure                     |Author          |Last Updated |
 | ------------------------------------ | :------------: | :---------: |
-|Name Procedure                        |SGreene         |2013/10/12   |
+|Name Procedure                        |SGreene      |2013/10/13  |
 
 * Table of Contents 
 {:toc}
@@ -12,22 +13,23 @@ CSS: style.css
 ----
 {.breakhere}
 
-## Requirements ##
 
-**TODO: Custom Maruku extension to make this simpler**
+## Requirements ##
 
 {#ID001.001.001}ID001.001.001 
 : Requirement 1.
 
 [ID001.001.001]: #ID001.001.001 "Requirement 1."
 
+
 {#ID001.001.002}ID001.001.002
-: Requirement 2.
+: Requirement 2. 
 
 [ID001.001.002]: #ID001.001.002 "Requirement 2."
 
 ----
 {.breakhere}
+
 
 ## Test Cases ##
 
@@ -49,6 +51,7 @@ CSS: style.css
 
 ----
 {.breakhere}
+
 
 ## Sign-Off Sheet ##
 
@@ -85,4 +88,6 @@ CSS: style.css
 | -------------------------------- | ------- | ---- | ------- |
 |Government Signature              | {.wide} |Date  | {.wide} |
 |Contractor Signature              | {.wide} |Date  | {.wide} |
+
+
 
