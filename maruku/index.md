@@ -64,11 +64,13 @@ CSS: style.css
 |Total  | {#total_steps .wide}  |
 {.big}
 
-#### Summary ####
+#### Test Run Description ####
 
-|Test run description Site #, dry-run, etc |
-| ---------------------------------------- |
-| {.swide}                                 |
+|Test run description Site #/dry-run |Hours Spent |
+| ---------------------------------- | ---------- |
+| {.wide}                            | {.wide}    |
+
+#### Notes ####
 
 |Related IRs |
 | ---------- |
@@ -78,9 +80,6 @@ CSS: style.css
 | -------- |
 | {.swide} |
 
-|Hours Spent |
-| ---------- |
-| {.swide}   |
 
 #### Signatures ####
  

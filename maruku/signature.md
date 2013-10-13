@@ -2,18 +2,20 @@
 
 #### Results ####
 
-|Steps  |Results          |
+|Cases  |Results          |
 | ----- | :-------------: |
-|Passed | {#passed_steps .wide} |
-|Failed | {#failed_steps .wide} |
-|Total  | {#total_steps .wide}  |
+|Passed | {#passed_cases .wide} |
+|Failed | {#failed_cases .wide} |
+|Total  | {#total_cases .wide}  |
 {.big}
 
-#### Summary ####
+#### Test Run Description ####
 
-|Test run description Site #, dry-run, etc |
-| ---------------------------------------- |
-| {.swide}                                 |
+|Test run description Site #/dry-run |Hours Spent |
+| ---------------------------------- | ---------- |
+| {.wide}                            | {.wide}    |
+
+#### Notes ####
 
 |Related IRs |
 | ---------- |
@@ -23,9 +25,6 @@
 | -------- |
 | {.swide} |
 
-|Hours Spent |
-| ---------- |
-| {.swide}   |
 
 #### Signatures ####
  
