@@ -1,41 +1,88 @@
+CSS: style.css 
+
 # Final Acceptance Test # 
 
-Procedure         | Author          | Last Updated |
------------------ | --------------- | ------------ |
-Name of Procedure | S Greene        | 2013/10/12   |
+|Name of Procedure                     |Author          |Last Updated |
+| ------------------------------------ | :------------: | :---------: |
+|Name Procedure                        |SGreene         |2013/10/12   |
 
-* Table of Contents
+* Table of Contents 
 {:toc}
+
+----
+{.breakhere}
 
 ## Requirements ##
 
-* Requirement 1 
-* Requirement 2
+**TODO: Custom Maruku extension to make this simpler**
+
+{#ID001.001.001}ID001.001.001 
+: Requirement 1.
+
+[ID001.001.001]: #ID001.001.001 "Requirement 1."
+
+{#ID001.001.002}ID001.001.002
+: Requirement 2.
+
+[ID001.001.002]: #ID001.001.002 "Requirement 2."
+
+----
+{.breakhere}
 
 ## Test Cases ##
 
+### Setup ###
+
+* Setup steps
+* Setup steps
+* Setup steps
+
 ### Test Case 1 ###
+
+##### Tested Requirements #####
+* [ID001.001.001]
+* [ID001.001.002]
 
 1. Test test
 1. est Test test test
 1. est test test
 
-### Sign-Off Sheet ### {:class=breakhere}
+----
+{.breakhere}
 
-Test run description (Site #, dry-run, etc)
+## Sign-Off Sheet ##
 
-Steps  | -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- | Results    |
------- | --------------------------------------------------------------------- | :--------: |
-Passed | ..................................................................... |      0     |
-Failed | ..................................................................... |      0     |
-Total  | ..................................................................... |      0     |
+#### Results ####
 
-Text here?
+|Steps  |Results          |
+| ----- | :-------------: |
+|Passed | {#passed_steps .wide} |
+|Failed | {#failed_steps .wide} |
+|Total  | {#total_steps .wide}  |
+{.big}
 
-Summary              | aaaa | aaaa | aaaa |
--------------------- | ---- | ---- | ---- |
-Related IRs          | text | text | text |
-Comments             | text | text | text |
-Time Spent in Hours  | text | text | text |
-Government Signature | text | Date | text |
-Contractor Signature | text | Date | text |
+#### Summary ####
+
+|Test run description Site #, dry-run, etc |
+| ---------------------------------------- |
+| {.swide}                                 |
+
+|Related IRs |
+| ---------- |
+| {.swide}   |
+
+|Comments  |
+| -------- |
+| {.swide} |
+
+|Hours Spent |
+| ---------- |
+| {.swide}   |
+
+#### Signatures ####
+ 
+|Signatures                        |         |      |         |
+| -------------------------------- | ------- | ---- | ------- |
+|Government Signature              | {.wide} |Date  | {.wide} |
+|Contractor Signature              | {.wide} |Date  | {.wide} |
+

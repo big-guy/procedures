@@ -1,3 +1,3 @@
 #!/bin/bash
 
-maruku index.md -o - | tee index.html
+maruku -b index.md -o - | tee index.html

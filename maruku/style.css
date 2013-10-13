@@ -1,0 +1,33 @@
+
+body {
+   font-family: Georgia;
+}
+
+pre {
+   margin-left: 2em;
+   background-color: #eff;
+   border: solid 1px #bdd;
+   padding: 4px;
+}
+
+table {
+   border-collapse:collapse;
+}
+
+table.big {
+   font-size: 20px;
+   }
+
+table, th, td {
+  border: 1px solid black;
+}
+
+td.wide {
+  height: 80px;
+  width: 500px;
+}
+
+td.swide {
+  height: 80px;
+  width: 800px;
+}
