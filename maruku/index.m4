@@ -50,3 +50,5 @@ include(testcases.md)dnl
 ----
 {.breakhere}
 include(signature.md)dnl
+
+<script src="tcmath.js" type="text/javascript"></script>
