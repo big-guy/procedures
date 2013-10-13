@@ -1,10 +1,29 @@
 CSS: style.css
 
-define(reqdef,`
+define(`reqdef',`
 {#$1}$1
 : $2 
 
 [$1]: #$1 "$2"')dnl
+
+define(`tcCount', 0)dnl
+
+define(`tcHeader', `### Test Case $1 ###')dnl
+define(`tcdef', `
+
+define(`tcCount', incr(tcCount))dnl
+
+tcHeader(tcCount)
+
+##### Tested Requirements #####
+
+$*
+
+resultButtons(tcCount)')dnl
+
+define(`satisfies',`ifelse(eval($#<2),1,`* [$1]',`
+* [$1] 
+satisfies(shift($@))')')dnl
 
 define(resultButtons,`
 <form>
@@ -19,10 +38,6 @@ define(resultButtons,`
 <input type="submit" name="tc$1" value="Save" id="tc$1Save" />
 </fieldset>
 </form>')dnl
-
-define(`satisfies',`ifelse(eval($#<2),1,`* [$1]',`
-* [$1] 
-satisfies(shift($@))')')dnl
 
 include(title.md)dnl
 

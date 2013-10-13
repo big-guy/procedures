@@ -6,13 +6,10 @@
 * Setup steps
 * Setup steps
 
-### Test Case 1 ###
-
-##### Tested Requirements #####
+tcdef(
 satisfies(ID001.001.001, ID001.001.002)
 
 1. Test test
-1. est Test test test
+1. (does this mess something up?) est Test test test
 1. est test test
-
-resultButtons(1)
+)
