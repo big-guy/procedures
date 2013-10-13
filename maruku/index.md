@@ -20,16 +20,16 @@ CSS: style.css
 
 ## Requirements ##
 
-{#ID001.001.001}ID001.001.001 
-: Requirement 1.
 
-[ID001.001.001]: #ID001.001.001 "Requirement 1."
+{#ID001.001.001}ID001.001.001
+: Requirement 1,with commas?.
 
+[ID001.001.001]: #ID001.001.001 "ID001.001.001,Requirement 1,with commas?."
 
 {#ID001.001.002}ID001.001.002
-: Requirement 2. 
+: Requirement 2.
 
-[ID001.001.002]: #ID001.001.002 "Requirement 2."
+[ID001.001.002]: #ID001.001.002 "ID001.001.002,Requirement 2."
 
 ## Test Cases ##
 

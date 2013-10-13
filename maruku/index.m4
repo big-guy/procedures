@@ -2,9 +2,9 @@ CSS: style.css
 
 define(`reqdef',`
 {#$1}$1
-: $2 
+: shift($@)
 
-[$1]: #$1 "$2"')dnl
+[$1]: #$1 "$*"')dnl
 
 define(`tcCount', 0)dnl
 
