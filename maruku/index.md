@@ -1,4 +1,8 @@
 CSS: style.css
+
+
+
+
 # Final Acceptance Test # 
 
 |Name of Procedure                     |Author          |Last Updated |
@@ -7,6 +11,7 @@ CSS: style.css
 
 * Table of Contents 
 {:toc}
+
 
 ----
 {.breakhere}
@@ -24,9 +29,6 @@ CSS: style.css
 
 [ID001.001.002]: #ID001.001.002 "Requirement 2."
 
-----
-{.breakhere}
-
 ## Test Cases ##
 
 ### Setup ###
@@ -38,7 +40,8 @@ CSS: style.css
 ### Test Case 1 ###
 
 ##### Tested Requirements #####
-* [ID001.001.001]
+
+* [ID001.001.001] 
 * [ID001.001.002]
 
 1. Test test
@@ -61,7 +64,6 @@ CSS: style.css
 
 ----
 {.breakhere}
-
 ## Sign-Off Sheet ##
 
 #### Results ####

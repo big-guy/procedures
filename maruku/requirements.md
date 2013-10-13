@@ -7,6 +7,3 @@
 
 reqdef(ID001.001.002, Requirement 2.)
 
-----
-{.breakhere}
-

@@ -1,14 +1,12 @@
 CSS: style.css
-dnl
+
 define(reqdef,`
 {#$1}$1
 : $2 
 
 [$1]: #$1 "$2"')dnl
-dnl
-dnl
-dnl
-define(tcPF,`
+
+define(resultButtons,`
 <form>
 <fieldset>
 <legend>Results for Test Case $1</legend>
@@ -21,10 +19,19 @@ define(tcPF,`
 <input type="submit" name="tc$1" value="Save" id="tc$1Save" />
 </fieldset>
 </form>')dnl
-dnl
-dnl
-dnl
+
+define(`satisfies',`ifelse(eval($#<2),1,`* [$1]',`
+* [$1] 
+satisfies(shift($@))')')dnl
+
 include(title.md)dnl
+
+----
+{.breakhere}
+
 include(requirements.md)dnl
 include(testcases.md)dnl
+
+----
+{.breakhere}
 include(signature.md)dnl

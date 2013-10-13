@@ -9,15 +9,10 @@
 ### Test Case 1 ###
 
 ##### Tested Requirements #####
-* [ID001.001.001]
-* [ID001.001.002]
+satisfies(ID001.001.001, ID001.001.002)
 
 1. Test test
 1. est Test test test
 1. est test test
 
-tcPF(1)
-
-----
-{.breakhere}
-
+resultButtons(1)

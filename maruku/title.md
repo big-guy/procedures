@@ -7,6 +7,3 @@
 * Table of Contents 
 {:toc}
 
-----
-{.breakhere}
-
