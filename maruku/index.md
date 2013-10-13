@@ -1,6 +1,4 @@
 CSS: style.css
-
-
 # Final Acceptance Test # 
 
 |Name of Procedure                     |Author          |Last Updated |
@@ -12,7 +10,6 @@ CSS: style.css
 
 ----
 {.breakhere}
-
 
 ## Requirements ##
 
@@ -29,7 +26,6 @@ CSS: style.css
 
 ----
 {.breakhere}
-
 
 ## Test Cases ##
 
@@ -49,19 +45,33 @@ CSS: style.css
 1. est Test test test
 1. est test test
 
+
+<form>
+<fieldset>
+<legend>Results for Test Case 1</legend>
+<input type="radio" name="tc1" value="Pass" id="tc1Pass" checked="false"/>
+<label for="Pass">Pass</label>
+<input type="radio" name="tc1" value="Fail" id="tc1Fail" checked="false"/>
+<label for="Fail">Fail</label>
+<input type="radio" name="tc1" value="Skip" id="tc1Skip" checked="true"/>
+<label for="Skip">Skip</label>
+<input type="submit" name="tc1" value="Save" id="tc1Save" />
+</fieldset>
+</form>
+
 ----
 {.breakhere}
-
 
 ## Sign-Off Sheet ##
 
 #### Results ####
 
-|Steps  |Results          |
-| ----- | :-------------: |
-|Passed | {#passed_steps .wide} |
-|Failed | {#failed_steps .wide} |
-|Total  | {#total_steps .wide}  |
+|Cases    |Results                         |
+| ------- | :----------------------------: |
+|{.passed}Passed   | {#passed_cases .wide} |
+|{.failed}Failed   | {#failed_cases .wide} |
+|{.skipped}Skipped | {#failed_cases .wide} |
+| *Total*          | {#total_cases .wide}  |
 {.big}
 
 #### Test Run Description ####
@@ -87,6 +97,5 @@ CSS: style.css
 | -------------------------------- | ------- | ---- | ------- |
 |Government Signature              | {.wide} |Date  | {.wide} |
 |Contractor Signature              | {.wide} |Date  | {.wide} |
-
 
 
