@@ -6,12 +6,12 @@
 | ------- | :----------------------------: |
 |{.passed}Passed   | {#passed_cases .wide} |
 |{.failed}Failed   | {#failed_cases .wide} |
-|{.skipped}Skipped | {#failed_cases .wide} |
+|{.skipped}Skipped | {#skipped_cases .wide} |
 | *Total*          | {#total_cases .wide}  |
 
-#### Test Run Description ####
+#### Run Description ####
 
-|Test run description Site #/dry-run |Hours Spent |
+|Run description (Site #/dry-run)    |Hours Spent |
 | ---------------------------------- | ---------- |
 | {.wide}                            | {.wide}    |
 

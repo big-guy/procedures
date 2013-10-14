@@ -50,4 +50,5 @@ hrPageBreak
 
 include(signature.md)dnl
 
+<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
 <script src="tcmath.js" type="text/javascript"></script>
