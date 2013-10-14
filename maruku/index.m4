@@ -1,3 +1,4 @@
+Title: Final Acceptance Test
 CSS: style.css
 
 define(`reqdef',`
@@ -7,18 +8,16 @@ define(`reqdef',`
 [$1]: #$1 "$*"')dnl
 
 define(`tcCount', 0)dnl
+define(`hrPageBreak', `{.page-break}---')dnl
 
 define(`tcHeader', `### Test Case $1 ###')dnl
 define(`tcdef', `
 
 define(`tcCount', incr(tcCount))dnl
-
 tcHeader(tcCount)
-
-##### Tested Requirements #####
+**Tested Requirements**
 
 $*
-
 resultButtons(tcCount)')dnl
 
 define(`satisfies',`ifelse(eval($#<2),1,`* [$1]',`
@@ -35,20 +34,20 @@ define(resultButtons,`
 <label for="Fail">Fail</label>
 <input type="radio" name="tc$1" value="Skip" id="tc$1Skip" checked="true"/>
 <label for="Skip">Skip</label>
-<input type="submit" name="tc$1" value="Save" id="tc$1Save" />
+<input type="submit" value="Save"/><br/>
+<textarea rows="5" cols="80" name="tc$1comment"> </textarea><br/> 
 </fieldset>
 </form>')dnl
 
 include(title.md)dnl
 
-----
-{.breakhere}
+hrPageBreak
 
 include(requirements.md)dnl
 include(testcases.md)dnl
 
-----
-{.breakhere}
+hrPageBreak
+
 include(signature.md)dnl
 
 <script src="tcmath.js" type="text/javascript"></script>

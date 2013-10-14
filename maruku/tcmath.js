@@ -1,5 +1,5 @@
 function yourFunctionName() {
-   window.alert("hello")
+//   window.alert("hello")
 }           
 
 if(window.attachEvent) {

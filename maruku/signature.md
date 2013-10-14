@@ -8,7 +8,6 @@
 |{.failed}Failed   | {#failed_cases .wide} |
 |{.skipped}Skipped | {#failed_cases .wide} |
 | *Total*          | {#total_cases .wide}  |
-{.big}
 
 #### Test Run Description ####
 
