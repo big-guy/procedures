@@ -1,6 +1,13 @@
 ## Test Cases ##
 
 tcdefbyname(tc-simple)
+tcdefbyname(tc-simple)
+tcdefbyname(tc-simple)
+tcdefbyname(tc-simple)
+tcdefbyname(tc-simple)
+tcdefbyname(tc-simple)
+tcdefbyname(tc-simple)
+tcdefbyname(tc-simple)
 
 tcdef(
 tcsatisfies(ID001.001.002)

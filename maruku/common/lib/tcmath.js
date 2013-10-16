@@ -20,8 +20,11 @@ $(document).ready(function () {
 
       var links = ""
       var i, len
-      for (i=0, len=cases.length; i<len; ++i) {
+      for (i=0, len=Math.min(cases.length, 12); i<len; ++i) {
          links += (cases[i] + " ")
+      }
+      if (i!=cases.length) {
+         links += " ..."
       }
 
       return cases.length + " (" + percentage + "%) " + links

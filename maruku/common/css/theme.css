@@ -238,7 +238,7 @@ fieldset {
    right: 0;
    top: 0;
    width: 25%;
-   max-height: 85%;
+   max-height: 80%;
    overflow-y: auto;
    border: 1px solid black;
    border-radius: 10px;
@@ -248,10 +248,10 @@ fieldset {
 
 .progress {
    position: fixed;
-   bottom: 10%;
+   bottom: 5%;
    right: 0;
    width: 25%;
-   max-height: 15%;
+   max-height: 5%;
    border: 1px solid black;
    border-radius: 10px;
    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
