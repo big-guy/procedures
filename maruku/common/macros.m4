@@ -12,16 +12,20 @@ define(`tcdef', `
 
 define(`tcCount', incr(tcCount))dnl
 tcHeader(tcCount)
-**Tested Requirements**
 
 $*
-resultButtons(tcCount)')dnl
 
-define(`satisfies',`ifelse(eval($#<2),1,`* [$1]',`
-* [$1] 
-satisfies(shift($@))')')dnl
+tcresultButtons(tcCount)')dnl
 
-define(resultButtons,`
+define(`tcsatisfies',`ifelse(eval($#<2),1, `**Tested Requirements**
+* [$1]',`
+tcsatisfies(shift($@))
+* [$1]')')dnl
+
+define(`tcpurpose', `
+    $*')dnl
+
+define(tcresultButtons,`
 <form>
 <fieldset>
 <legend>Results for Test Case $1</legend>
