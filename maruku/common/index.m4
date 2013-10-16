@@ -1,4 +1,4 @@
-Title: Final Acceptance Test
+Title: Final Acceptance Test (NAMEOFPROCEDURE)
 CSS: css/style.css
 
 include(macros.m4)dnl
