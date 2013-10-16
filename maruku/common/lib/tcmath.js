@@ -32,8 +32,13 @@ $(document).ready(function () {
       return totalTestCases
    }
 
-   $('#passed_cases').each(function() { $(this).html(prettyPrintCasesWithValue("Pass")) })
-   $('#failed_cases').each(function() { $(this).html(prettyPrintCasesWithValue("Fail")) })
-   $('#skipped_cases').each(function() { $(this).html(prettyPrintCasesWithValue("Skip"))})
-   $('#total_cases').text(totalCases())
+   function updateProgress() {
+      $('td#passed_cases').each(function() { $(this).html(prettyPrintCasesWithValue("Pass")) })
+      $('td#failed_cases').each(function() { $(this).html(prettyPrintCasesWithValue("Fail")) })
+      $('td#skipped_cases').each(function() { $(this).html(prettyPrintCasesWithValue("Skip"))})
+      $('td#total_cases').text(totalCases())
+   }
+
+   updateProgress()
+   setInterval(updateProgress, 5000)
 });
