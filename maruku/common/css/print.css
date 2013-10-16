@@ -8,3 +8,4 @@ fieldset { width:100%; }
 /* force print page break */
 .page-break { page-break-before: always; }
 
+.plaintext { display: none; }

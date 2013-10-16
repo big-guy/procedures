@@ -263,3 +263,6 @@ td.skipped { color: orange; }
 .testcase {
    margin: 30px;
 }
+.plaintext {
+   font-size: x-small;
+}
