@@ -1,16 +1,39 @@
 // When the page is ready
 $(document).ready(function () {
-/*   function(type) {
-      $('input[type=radio]').each { 
-         alert($(this))
-      }
-   } */
    function linkTo(tc) {
-      return "<a target='_self' href='#test_case_" + tc + "'>" + tc + "</a>";
+      return "<a href='#test_case_" + tc + "'>" + tc + "</a>";
    }
 
-   $('td#passed_cases').text("0 (0%)")
-   $('td#failed_cases').text("0 (0%)")
-   $('td#skipped_cases').html("12 (100%) " + linkTo(1) + " 2 3 4 5 6 7 8 9 10 11 12")
-   $('td#total_cases').text("12")
+   function casesWithValue(value) {
+      var links = []
+      $(':radio[value=' + value + ']:checked').each(function() {
+         var tc = $(this).attr('name').slice(2)
+         links.push(linkTo(tc))
+      })
+      return links 
+   }
+
+   function prettyPrintCasesWithValue(value) {
+      var cases = casesWithValue(value)
+      var total = totalCases()
+      var percentage = Math.round(cases.length*100/total)
+
+      var links = ""
+      var i, len
+      for (i=0, len=cases.length; i<len; ++i) {
+         links += (cases[i] + " ")
+      }
+
+      return cases.length + " (" + percentage + "%) " + links
+   }
+
+   function totalCases() {
+      var totalTestCases=$('input[type="radio"]:checked').length
+      return totalTestCases
+   }
+
+   $('td#passed_cases').html(prettyPrintCasesWithValue("Pass"))
+   $('td#failed_cases').html(prettyPrintCasesWithValue("Fail"))
+   $('td#skipped_cases').html(prettyPrintCasesWithValue("Skip"))
+   $('td#total_cases').text(totalCases())
 });
