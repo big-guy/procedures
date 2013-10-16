@@ -277,6 +277,18 @@ td.skipped { color: orange; }
 .plaintext {
    font-size: x-small;
 }
-.requirement {
+
+dl {
+   border: 1px solid black;
+   width:50%;
+}
+dt {
    font-weight:bold; 
+}
+
+dd.covered {
+   background-color:lightgreen;
+}
+dd.notcovered {
+   background-color:lightcoral;
 }

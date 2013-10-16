@@ -1,5 +1,5 @@
 define(`reqdef',`
-{#$1 .requirement}$1
+{#$1}$1
 : shift($@)
 
 [$1]: #$1 "$*"')dnl
