@@ -32,8 +32,8 @@ $(document).ready(function () {
       return totalTestCases
    }
 
-   $('td#passed_cases').html(prettyPrintCasesWithValue("Pass"))
-   $('td#failed_cases').html(prettyPrintCasesWithValue("Fail"))
-   $('td#skipped_cases').html(prettyPrintCasesWithValue("Skip"))
-   $('td#total_cases').text(totalCases())
+   $('#passed_cases').each(function() { $(this).html(prettyPrintCasesWithValue("Pass")) })
+   $('#failed_cases').each(function() { $(this).html(prettyPrintCasesWithValue("Fail")) })
+   $('#skipped_cases').each(function() { $(this).html(prettyPrintCasesWithValue("Skip"))})
+   $('#total_cases').text(totalCases())
 });

@@ -1,8 +1,8 @@
 /* Make tables take the full width of the page */
 table,fieldset { width: 100% }
 
-/* Hide TOC */
-.plaintext, .maruku_toc { display: none; }
+/* Hide floating things */
+.progress, .plaintext, .maruku_toc { display: none; }
 
 /* force print page break */
 .page-break { page-break-before: always; }

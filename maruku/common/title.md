@@ -17,3 +17,10 @@
       <a href="#download">DOWNLOAD RESULTS</a> 
    </fieldset>
 </form>
+
+|Progress                   |
+| :-----------------------: |
+| {#passed_cases .passed}   |
+| {#failed_cases .failed}   |
+| {#skipped_cases .skipped} |
+{.progress}
