@@ -266,3 +266,6 @@ td.skipped { color: orange; }
 .plaintext {
    font-size: x-small;
 }
+.requirement {
+   font-weight:bold; 
+}

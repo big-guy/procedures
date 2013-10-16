@@ -1,5 +1,5 @@
 define(`reqdef',`
-{#$1}$1
+{#$1 .requirement}$1
 : shift($@)
 
 [$1]: #$1 "$*"')dnl
@@ -48,5 +48,3 @@ define(`tcresultButtons',`
 <textarea rows="5" cols="80" name="tc$1comment"> </textarea><br/> 
 </fieldset>
 </form>')dnl
-
-
