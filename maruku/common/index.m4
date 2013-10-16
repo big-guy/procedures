@@ -5,6 +5,7 @@ include(macros.m4)dnl
 include(title.md)dnl
 hrPageBreak
 include(requirements.md)dnl
+include(setup.md)dnl
 include(testcases.md)dnl
 hrPageBreak
 include(signature.md)dnl

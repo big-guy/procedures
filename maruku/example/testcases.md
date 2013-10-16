@@ -1,11 +1,5 @@
 ## Test Cases ##
 
-### Setup ###
-
-* Setup steps
-* Setup steps
-* Setup steps
-
 tcdefbyname(tc-simple)
 
 tcdef(
