@@ -1,0 +1,52 @@
+body {
+   font-family: Georgia;
+   background-color: white;
+   color: black;
+}
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
+
+table, th, td {
+   border-collapse:collapse;
+   font-size: medium;
+   border: 1px solid black;
+}
+
+table { width:50% }
+
+fieldset { width:50%; }
+
+.maruku_toc {
+   position: fixed;
+   right: 0;
+   top: 0;
+   width: 25%;
+   max-height: 85%;
+   overflow-y: auto;
+   border: 1px solid black;
+   border-radius: 10px;
+   box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+   background-color: whitesmoke;
+}
+
+input[type="radio"] {
+   cursor: pointer;
+}
+
+td.wide {
+  height: 1em;
+  width: 20em;
+}
+
+td.swide {
+  height: 5em;
+}
+
+td.passed { color: green; }
+td.failed { color: red; }
+td.skipped { color: orange; }
+
+

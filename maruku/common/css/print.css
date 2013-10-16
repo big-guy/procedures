@@ -1,0 +1,10 @@
+/* Make tables take the full width of the page */
+table { width: 100% }
+fieldset { width:100%; }
+
+/* Hide TOC */
+.maruku_toc { display: none; }
+
+/* force print page break */
+.page-break { page-break-before: always; }
+

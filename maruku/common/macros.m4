@@ -1,6 +1,3 @@
-Title: Final Acceptance Test
-CSS: style.css
-
 define(`reqdef',`
 {#$1}$1
 : shift($@)
@@ -39,16 +36,4 @@ define(resultButtons,`
 </fieldset>
 </form>')dnl
 
-include(title.md)dnl
 
-hrPageBreak
-
-include(requirements.md)dnl
-include(testcases.md)dnl
-
-hrPageBreak
-
-include(signature.md)dnl
-
-<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
-<script src="tcmath.js" type="text/javascript"></script>
