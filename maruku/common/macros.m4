@@ -26,11 +26,11 @@ define(resultButtons,`
 <fieldset>
 <legend>Results for Test Case $1</legend>
 <input type="radio" name="tc$1" value="Pass" id="tc$1Pass" checked="false"/>
-<label for="Pass">Pass</label>
+<label for="tc$1Pass">Pass</label>
 <input type="radio" name="tc$1" value="Fail" id="tc$1Fail" checked="false"/>
-<label for="Fail">Fail</label>
+<label for="tc$1Fail">Fail</label>
 <input type="radio" name="tc$1" value="Skip" id="tc$1Skip" checked="true"/>
-<label for="Skip">Skip</label>
+<label for="tc$1Skip">Skip</label>
 <input type="submit" value="Save"/><br/>
 <textarea rows="5" cols="80" name="tc$1comment"> </textarea><br/> 
 </fieldset>
