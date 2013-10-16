@@ -11,6 +11,7 @@ declare BUILDDIR="build/${PROCEDURE}"
 echo "Building $PROCEDURE"
 
 echo "Build attributes:"
+cat ${PROCEDURE}/meta.info
 source ${PROCEDURE}/meta.info
 
 rm -rf ${BUILDDIR}
