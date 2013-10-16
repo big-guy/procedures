@@ -44,7 +44,6 @@ define(`tcresultButtons',`
 <label for="tc$1Fail">Fail</label>
 <input type="radio" name="tc$1" value="Skip" id="tc$1Skip" checked="true"/>
 <label for="tc$1Skip">Skip</label>
-<input type="submit" value="Save"/><br/>
 <textarea rows="5" cols="80" name="tc$1comment"> </textarea><br/> 
 </fieldset>
 </form>')dnl

@@ -7,4 +7,13 @@
 | ------------------------------------ | :------------: | :---------: |
 |NAMEOFPROCEDURE                       |LASTAUTHOR      |LASTMODDATE  |
 
-
+<form class="plaintext">
+   <fieldset>
+      <legend>Procedure Controls</legend>
+      <label for="resultsLoad">Load</label>
+      <input type="file" name="resultsLoad" id="resultsLoad"/><br>
+      <label for="testRunDescription">Run Description</label>
+      <input type="text" name="testRunDescription" id="testRunDescription"/><br>
+      <a href="#download">DOWNLOAD RESULTS</a> 
+   </fieldset>
+</form>
