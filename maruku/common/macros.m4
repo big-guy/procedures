@@ -23,9 +23,13 @@ tcsatisfies(shift($@))
 * [$1]')')dnl
 
 define(`tcpurpose', `
+_Description_
+
     $*')dnl
 
-define(tcresultButtons,`
+define(`tcdefbyname', `tcdef(include($1.md))')dnl
+
+define(`tcresultButtons',`
 <form>
 <fieldset>
 <legend>Results for Test Case $1</legend>
