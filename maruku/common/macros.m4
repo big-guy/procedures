@@ -13,11 +13,16 @@ define(`tcdef', `
 define(`tcCount', incr(tcCount))dnl
 tcHeader(tcCount)
 
++-- {.testcase}
+
 $*
 
-tcresultButtons(tcCount)')dnl
+tcresultButtons(tcCount)
+
+=--')dnl
 
 define(`tcsatisfies',`ifelse(eval($#<2),1, `**Tested Requirements**
+
 * [$1]',`
 tcsatisfies(shift($@))
 * [$1]')')dnl

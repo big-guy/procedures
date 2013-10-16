@@ -260,4 +260,6 @@ td.passed { color: green; }
 td.failed { color: red; }
 td.skipped { color: orange; }
 
-
+.testcase {
+   margin: 30px;
+}
