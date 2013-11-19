@@ -1,5 +1,5 @@
 tcpurpose(Checks that only three recipes may be added to Coffee Maker)
-tcsatisfies(ID001.001.002)
+tcsatisfies(ID001.001.003)
 
 **Steps**
 1. Enter: Menu option 1, "Add a recipe "

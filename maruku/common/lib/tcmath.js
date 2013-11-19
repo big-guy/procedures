@@ -35,6 +35,14 @@ $(document).ready(function () {
       return totalTestCases
    }
 
+   function checkReqtsAreMet() {
+      $('dt').each(function() { 
+         var reqtId = $(this).attr('id')
+         var satisified = $('a[href$="' + reqtId + '"]').length > 0
+         if (!satisified) $(this).addClass('unmetRequirement')
+      }) 
+   }
+
    function updateProgress() {
       $('td#passed_cases').each(function() { $(this).html(prettyPrintCasesWithValue("Pass")) })
       $('td#failed_cases').each(function() { $(this).html(prettyPrintCasesWithValue("Fail")) })
@@ -42,6 +50,7 @@ $(document).ready(function () {
       $('td#total_cases').text(totalCases())
    }
 
+   checkReqtsAreMet()
    updateProgress()
    setInterval(updateProgress, 1000)
 });

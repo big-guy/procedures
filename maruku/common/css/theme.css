@@ -279,3 +279,8 @@ dd.notcovered {
 }
 
 #header.printonly, #footer.printonly { display: none; }
+
+.unmetRequirement {
+   background-color: red;
+   font-size: x-large;
+}
