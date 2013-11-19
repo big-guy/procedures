@@ -43,5 +43,5 @@ $(document).ready(function () {
    }
 
    updateProgress()
-   setInterval(updateProgress, 5000)
+   setInterval(updateProgress, 1000)
 });
