@@ -1,3 +1,6 @@
-LASTAUTHOR=${USER}
-LASTMODDATE="`date`"
-NAMEOFPROCEDURE="Example Procedure"
+export LASTAUTHOR=${USER}
+export LASTMODDATE="`date`"
+export NAMEOFPROCEDURE="Example Procedure"
+
+export CLASSIFICATION="Unclassified"
+export DERIVEDFROM="Nothing Classification Guide"

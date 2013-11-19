@@ -6,3 +6,13 @@ table,fieldset { width: 100% }
 
 /* force print page break */
 .page-break { page-break-before: always; }
+
+header.printonly {
+   position: fixed;
+   top: 0;
+}
+
+footer.printonly {
+   position: fixed;
+   bottom: 0;
+}

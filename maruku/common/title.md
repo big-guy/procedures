@@ -5,7 +5,7 @@
 
 |Name of Procedure                     |Author          |Last Updated |
 | ------------------------------------ | :------------: | :---------: |
-|NAMEOFPROCEDURE                       |LASTAUTHOR      |LASTMODDATE  |
+|NAMEOFPROCEDURE                       | LASTAUTHOR     | LASTMODDATE |
 
 <form class="plaintext">
    <fieldset>
@@ -17,6 +17,16 @@
       <a href="#download">DOWNLOAD RESULTS</a> 
    </fieldset>
 </form>
+
++-- {#header .printonly}
+CLASSIFICATION 
+Derived From: DERIVEDFROM
+=--
+
++-- {#footer .printonly}
+CLASSIFICATION 
+Derived From: DERIVEDFROM
+=--
 
 |Progress                   |
 | :-----------------------: |

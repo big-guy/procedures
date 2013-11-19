@@ -277,3 +277,5 @@ dd.covered {
 dd.notcovered {
    background-color:lightcoral;
 }
+
+#header.printonly, #footer.printonly { display: none; }
