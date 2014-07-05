@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>Test Procedure {{title}}</title>
+  <link rel="stylesheet" type="text/css" href="static/css/markdown-docs.css"/>
+</head>
+<body>
+  <a href='{{ destination_root_dir }}/index.html'>&lt; Back to index</a>
+  {{ markdown_html }}<br />
+  <a href='{{ destination_root_dir }}/index.html'>&lt; Back to index</a>
+
+  {{>1234/main}}
+  <progress value="22" max="100"></progress>
+  <footer id='markdown-docs-footer'>
+    Document generated at {{generation_timestamp}}. <br />
+  </footer>
+</body>
+</html>
