@@ -1,4 +1,5 @@
 {
+   "common_settings": "common/data.json",
+   "title": "Title of Document",
    "name": "test"
-
 }
