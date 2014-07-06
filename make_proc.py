@@ -6,7 +6,6 @@ import pystache
 import json
 import html.parser
 
-import time
 import datetime
 
 if (len(sys.argv) < 2): 

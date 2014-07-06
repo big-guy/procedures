@@ -1,7 +1,6 @@
 {
    "common_settings": "common/data.json",
    "title": "Title of Document",
-   "name": "test",
    "css_files": [ "test/test.css" ],
    "js_files": [ "test/test.js" ],
    "included_files": [ "{{>1234/main}}" ]
