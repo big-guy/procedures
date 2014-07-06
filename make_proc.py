@@ -33,7 +33,7 @@ with open(projectfile) as json_data:
 #    print(json.dumps(data))
 
 md_render = markdown.Markdown(extensions=data['markdown_extensions'], output_format="html5" )
-py_renderer = pystache.Renderer(missing_tags='strict')
+py_renderer = pystache.Renderer(missing_tags='strict', search_dirs=data['search_dirs'])
 
 with open(data['body_template_file']) as body_file, open(data['html_template_file']) as html_file:
 

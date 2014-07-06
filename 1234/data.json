@@ -3,5 +3,6 @@
    "title": "Title of Document",
    "css_files": [ "test/test.css" ],
    "js_files": [ "test/test.js" ],
-   "included_files": [ "{{>1234/main}}" ]
+   "search_dirs": [ "1234/", "common/", "." ],
+   "included_files": [ "{{>main}}", "{{>common}}" ]
 }
