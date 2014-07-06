@@ -5,5 +5,5 @@
    "title": "Example Procedure",
    "author": "sterling",
 
-   "included_tests": [ "tc1", "common" ]
+   "included_tests": [ "example_tc", "common" ]
 }
