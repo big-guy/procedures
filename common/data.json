@@ -1,7 +1,7 @@
 {
    "markdown_extensions": ["extra", "toc", "meta", "sane_lists"],
    "html_template_file": "common/all/html.mustache",
-   "body_template_file": "common/all/body.mustache",
+   "markdown_template_file": "common/all/markdown.mustache",
    "search_dirs": [ ".", "common/", "common/all" ],
    "css_files": [ "css/style.css" ],
    "js_files": [ "lib/tcmath.js", "lib/jquery-1.10.2.min.js" ],
