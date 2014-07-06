@@ -4,5 +4,5 @@
    "author": "sterling",
    "search_dirs": [ "1234/example", "common/example", "common/all", "." ],
 
-   "included_files": [ "{{>main}}", "{{>common}}" ]
+   "included_tests": [ "{{>tc1}}", "{{>common}}" ]
 }
