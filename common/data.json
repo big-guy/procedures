@@ -3,7 +3,7 @@
    "html_template_file": "common/all/html.mustache",
    "body_template_file": "common/all/body.mustache",
    "search_dirs": [ ".", "common/", "common/all" ],
-   "css_files": [ ],
-   "js_files": [ ],
+   "css_files": [ "css/style.css" ],
+   "js_files": [ "lib/tcmath.js", "lib/jquery-1.10.2.min.js" ],
    "included_files": [ ]
 }

@@ -22,11 +22,12 @@ class Lambdas(object):
 
 with open(projectfile) as json_data:
     project_data = json.load(json_data)
-    if 'common_settings' in project_data: 
-        with open(project_data['common_settings']) as common_json_data:
-            common_data = json.load(common_json_data)
-    else:
-        common_data = {}
+
+    common_data = {}
+    for common_settings in project_data['common_settings']: 
+        with open(common_settings) as common_json_data:
+            loaded_data = json.load(common_json_data)
+            common_data = {key: value for (key, value) in (list(loaded_data.items()) + list(common_data.items()))}
 
     data = {key: value for (key, value) in (list(common_data.items()) + list(project_data.items()))}
     data['generation_timestamp'] = datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M')

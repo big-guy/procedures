@@ -5,18 +5,14 @@
     {{#css_files}}
       <link href="{{.}}" type="text/css" rel="stylesheet" />
     {{/css_files}}
-    {{#js_files}}
-      <script type="application/javascript" src="{{.}}"/>
-    {{/js_files}}
     <title>Final Acceptance Test ({{title}})</title>
   </head>
 
 <body>
+    {{{__body}}}
 
-{{{__body}}}
-
+    {{#js_files}}
+      <script type="text/javascript" src="{{.}}"><![CDATA[]]></script>
+    {{/js_files}}
 </body>
-
 </html>
-
-
