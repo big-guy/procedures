@@ -1,8 +1,6 @@
 {
    "common_settings": "common/data.json",
    "title": "Title of Document",
-   "css_files": [ "test/test.css" ],
-   "js_files": [ "test/test.js" ],
-   "search_dirs": [ "1234/", "common/", "." ],
+   "search_dirs": [ "1234/example", "common/example", "." ],
    "included_files": [ "{{>main}}", "{{>common}}" ]
 }
