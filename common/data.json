@@ -4,7 +4,7 @@
    "markdown_template_file": "common/all/markdown.mustache",
    "search_dirs": [ ".", "common/", "common/all" ],
    "css_files": [ "css/style.css" ],
-   "js_files": [ "lib/tcmath.js", "lib/jquery-1.10.2.min.js" ],
+   "js_files": [ "lib/jquery-1.10.2.min.js", "lib/tcmath.js" ],
    "included_tests": [ ],
    "requirements": [ { "id": "n/a", "description": "n/a", "method": "T" } ]
 }
