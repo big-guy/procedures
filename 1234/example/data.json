@@ -1,5 +1,5 @@
 {
-   "common_settings": [ "common/data.json" ],
+   "common_settings": [ "common/data.json", "1234/example/requirements.json" ],
    "title": "Example Procedure",
    "author": "sterling",
    "search_dirs": [ "1234/example", "common/example", "common/all", "." ],
