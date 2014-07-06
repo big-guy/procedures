@@ -24,8 +24,8 @@ with open(projectfile) as json_data:
     project_data = json.load(json_data)
 
     common_data = {}
-    for common_settings in project_data['common_settings']: 
-        with open(common_settings) as common_json_data:
+    for import_from in project_data['import_from']: 
+        with open(import_from) as common_json_data:
             loaded_data = json.load(common_json_data)
             common_data = {key: value for (key, value) in (list(common_data.items()) + list(loaded_data.items()))}
 
