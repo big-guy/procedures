@@ -1,6 +1,8 @@
 {
    "common_settings": "common/data.json",
-   "title": "Title of Document",
+   "title": "Example Procedure",
+   "author": "sterling",
    "search_dirs": [ "1234/example", "common/example", "." ],
+
    "included_files": [ "{{>main}}", "{{>common}}" ]
 }
