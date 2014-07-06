@@ -30,6 +30,9 @@ with open(projectfile) as json_data:
             common_data = {key: value for (key, value) in (list(common_data.items()) + list(loaded_data.items()))}
 
     data = {key: value for (key, value) in (list(common_data.items()) + list(project_data.items()))}
+
+    tests = [ {'id': idx, 'file': "{{>" + test + "}}" } for idx, test in enumerate(data['included_tests'])]
+    data['included_tests'] = tests
     data['generation_timestamp'] = datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M')
 #    print(json.dumps(data))
 
