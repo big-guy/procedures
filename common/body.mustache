@@ -1,9 +1,11 @@
-  <a href='{{ destination_root_dir }}/index.html'>&lt; Back to index</a>
-  {{ markdown_html }}<br />
-  <a href='{{ destination_root_dir }}/index.html'>&lt; Back to index</a>
+{{#unescape}}
+{{#included_files}}
+  {{{.}}}
+{{/included_files}}
+{{/unescape}}
 
-  {{>1234/main}}
   <progress value="22" max="100"></progress>
+
   <footer id='markdown-docs-footer'>
     Document generated at {{generation_timestamp}}. <br />
   </footer>

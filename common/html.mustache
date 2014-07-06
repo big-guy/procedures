@@ -2,8 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="white.css" type="text/css" rel="stylesheet" />
-    <link href="default.css" type="text/css" rel="stylesheet" />
+    {{#css_files}}
+      <link href="{{.}}" type="text/css" rel="stylesheet" />
+    {{/css_files}}
+    {{#js_files}}
+      <script type="application/javascript" src="{{.}}"/>
+    {{/js_files}}
     <title>{{title}}</title>
   </head>
 

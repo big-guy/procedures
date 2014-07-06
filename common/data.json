@@ -1,5 +1,8 @@
 {
+   "markdown_extensions": ["extra", "toc", "meta", "sane_lists"],
    "html_template_file": "common/html.mustache",
    "body_template_file": "common/body.mustache",
-   "markdown_extensions": ["extra", "toc", "meta", "sane_lists"]
+   "css_files": [ ],
+   "js_files": [ ],
+   "included_files": [ ]
 }
