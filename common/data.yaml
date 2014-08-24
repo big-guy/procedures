@@ -5,13 +5,13 @@ markdown_extensions:
    - meta
    - sane_lists
 
-html_template_file: common/all/html.mustache
-markdown_template_file: common/all/markdown.mustache
+html_template_file: base/html.mustache
+markdown_template_file: base/markdown.mustache
 
 search_dirs:
    - .
    - common
-   - common/all
+   - base 
 
 css_files:
   - css/style.css

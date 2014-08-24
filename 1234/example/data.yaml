@@ -4,10 +4,10 @@ import_from:
    - 1234/example/requirements.yaml
 
 search_dirs: 
+   - .
    - 1234/example
    - common/example
-   - common/all
-   - .
+   - base 
 
 title: Example Procedure
 author: sterling
