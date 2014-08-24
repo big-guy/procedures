@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import os, sys, copy
+import os, sys, copy, shutil
 import markdown
 import pystache
 import yaml
@@ -12,8 +12,10 @@ if (len(sys.argv) < 2):
    print("make_proc.py path/to/data.yaml path/to/output.html")
    exit(-1)
 
+# TODO: Expand command line options
 projectfile = sys.argv[1]
-outputfile = sys.argv[2]
+outputdir = sys.argv[2]
+outputfile = outputdir + 'index.html'
 
 # Prevents escaping of HTML elements in test cases
 class Lambdas(object):
@@ -43,6 +45,8 @@ with open(projectfile) as configuration_data:
     data['__generation_timestamp'] = datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M')
 #    print(yaml.dump(data))
 
+# Converts input mustache files into single markdown formatted file
+# Converts markdown formatted file into HTML
 with open(data['markdown_template_file']) as md_file, open(data['html_template_file']) as html_file:
 
     py_renderer = pystache.Renderer(missing_tags='strict', search_dirs=data['search_dirs'])
@@ -60,4 +64,15 @@ with open(data['markdown_template_file']) as md_file, open(data['html_template_f
 with open(outputfile, 'w') as out:
     out.write(output)
     out.close()
+
+# Copy supporting files to outputdir
+# TODO: Allow this to be configurable
+try:
+    shutil.rmtree(outputdir+'css')
+except OSError as e:
+    pass
+shutil.copytree('css', outputdir+'css')
+
+for js_file in data['js_files']:
+    shutil.copy(js_file, outputdir + 'lib')
 
