@@ -14,5 +14,9 @@ author: sterling
 
 included_tests: 
    - file: example_tc
+   - file: example_tc
+   - file: example_tc
+   - file: example_tc
+   - file: example_tc
    - file: common
      other: test
