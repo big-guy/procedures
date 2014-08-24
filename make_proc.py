@@ -36,11 +36,12 @@ with open(projectfile) as configuration_data:
     # Combine import_from and project_data (project data takes priority)
     data = {key: value for (key, value) in (list(common_data.items()) + list(project_data.items()))}
     # Assign unique identifiers to test cases and format into pystache import format
-    tests = [ {'id': idx+1, 'file': "{{>" + test + "}}" } for idx, test in enumerate(data['included_tests'])]
+    tests = [ { '__id': idx+1, '__file': "{{>" + test['file'] + "}}" } for idx, test in enumerate(data['included_tests'])]
+    # TODO: Merge dicts into single list so fields from YAML are saved in included_tests for later
     data['included_tests'] = tests
     # timestamp for when we created the document
     data['generation_timestamp'] = datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M')
-#    print(yaml.dump(data))
+    print(yaml.dump(data))
 
 with open(data['markdown_template_file']) as md_file, open(data['html_template_file']) as html_file:
 

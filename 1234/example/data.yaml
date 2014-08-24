@@ -13,5 +13,6 @@ title: Example Procedure
 author: sterling
 
 included_tests: 
-   - example_tc
-   - common
+   - file: example_tc
+   - file: common
+     other: test
