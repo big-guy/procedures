@@ -40,7 +40,7 @@ with open(projectfile) as configuration_data:
     # TODO: Merge dicts into single list so fields from YAML are saved in included_tests for later
     data['included_tests'] = tests
     # timestamp for when we created the document
-    data['generation_timestamp'] = datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M')
+    data['__generation_timestamp'] = datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M')
     print(yaml.dump(data))
 
 with open(data['markdown_template_file']) as md_file, open(data['html_template_file']) as html_file:
