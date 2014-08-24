@@ -14,7 +14,7 @@ if (len(sys.argv) < 2):
 
 # TODO: Expand command line options
 projectfile = sys.argv[1]
-outputdir = sys.argv[2]
+outputdir = sys.argv[2] + '/'
 outputfile = outputdir + 'index.html'
 
 # Prevents escaping of HTML elements in test cases
@@ -61,10 +61,6 @@ with open(data['markdown_template_file']) as md_file, open(data['html_template_f
     output = py_renderer.render(html_file.read(), data, Lambdas(py_renderer))
 #    print(output)
 
-with open(outputfile, 'w') as out:
-    out.write(output)
-    out.close()
-
 # Copy supporting files to outputdir
 # TODO: Allow this to be configurable
 try:
@@ -75,4 +71,8 @@ shutil.copytree('css', outputdir+'css')
 
 for js_file in data['js_files']:
     shutil.copy(js_file, outputdir + 'lib')
+
+with open(outputfile, 'w') as out:
+    out.write(output)
+    out.close()
 
