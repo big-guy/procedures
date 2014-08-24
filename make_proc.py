@@ -3,7 +3,7 @@
 import os, sys, copy
 import markdown
 import pystache
-import json
+import yaml
 import html.parser
 
 import datetime
@@ -20,13 +20,13 @@ class Lambdas(object):
     def unescape(self):
         return lambda s: html.parser.HTMLParser().unescape(copy.deepcopy(self.renderer).render(s, self.renderer.context))
 
-with open(projectfile) as json_data:
-    project_data = json.load(json_data)
+with open(projectfile) as configuration_data:
+    project_data = yaml.load(configuration_data)
 
     common_data = {}
     for import_from in project_data['import_from']: 
-        with open(import_from) as common_json_data:
-            loaded_data = json.load(common_json_data)
+        with open(import_from) as common_configuration_data:
+            loaded_data = yaml.load(common_configuration_data)
             common_data = {key: value for (key, value) in (list(common_data.items()) + list(loaded_data.items()))}
 
     data = {key: value for (key, value) in (list(common_data.items()) + list(project_data.items()))}
@@ -34,7 +34,6 @@ with open(projectfile) as json_data:
     tests = [ {'id': idx+1, 'file': "{{>" + test + "}}" } for idx, test in enumerate(data['included_tests'])]
     data['included_tests'] = tests
     data['generation_timestamp'] = datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M')
-#    print(json.dumps(data))
 
 md_render = markdown.Markdown(extensions=data['markdown_extensions'], output_format="html5" )
 py_renderer = pystache.Renderer(missing_tags='strict', search_dirs=data['search_dirs'])

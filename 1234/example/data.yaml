@@ -1,0 +1,17 @@
+---
+import_from: 
+   - common/data.yaml
+   - 1234/example/requirements.yaml
+
+search_dirs: 
+   - 1234/example
+   - common/example
+   - common/all
+   - .
+
+title: Example Procedure
+author: sterling
+
+included_tests: 
+   - example_tc
+   - common

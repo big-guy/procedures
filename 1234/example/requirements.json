@@ -1,6 +1,0 @@
-{
-  "requirements": [
-     { "id": "ID001.001.001", "method": "T", "description": "ID001.001.001,Requirement 1,with commas?." },
-     { "id": "ID001.001.002", "method": "T", "description": "Requirement 2." }
-  ]
-}

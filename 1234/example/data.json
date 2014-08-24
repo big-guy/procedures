@@ -1,9 +1,0 @@
-{
-   "import_from": [ "common/data.json", "1234/example/requirements.json" ],
-   "search_dirs": [ "1234/example", "common/example", "common/all", "." ],
-
-   "title": "Example Procedure",
-   "author": "sterling",
-
-   "included_tests": [ "example_tc", "common" ]
-}
