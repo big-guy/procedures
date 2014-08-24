@@ -41,7 +41,7 @@ with open(projectfile) as configuration_data:
     data['included_tests'] = tests
     # timestamp for when we created the document
     data['__generation_timestamp'] = datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M')
-    print(yaml.dump(data))
+#    print(yaml.dump(data))
 
 with open(data['markdown_template_file']) as md_file, open(data['html_template_file']) as html_file:
 
