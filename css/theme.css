@@ -285,9 +285,11 @@ dt {
    font-weight:bold; 
 }
 
-dd.covered {
-   background-color:lightgreen;
+
+dt.covered {
+   background-color:lime;
 }
-dd.notcovered {
-   background-color:lightcoral;
+
+dt.notcovered {
+   background-color:red;
 }
