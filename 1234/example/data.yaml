@@ -14,9 +14,14 @@ author: sterling
 
 included_tests: 
    - file: example_tc
+     title: Example Of Something 
    - file: example_tc
+     title: Example Of Anything
    - file: example_tc
+     title: Example of Nothing
    - file: example_tc
+     title: Example of Someone
    - file: example_tc
+     title: Example of Anyone
    - file: common
-     other: test
+     title: Example of Noone

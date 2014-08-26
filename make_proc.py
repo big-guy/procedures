@@ -24,6 +24,21 @@ class Lambdas(object):
     def unescape(self):
         return lambda s: html.parser.HTMLParser().unescape(copy.deepcopy(self.renderer).render(s, self.renderer.context))
 
+def merge_dict_lists(dict1, dict2):
+    return list(dict1.items()) + list(dict2.items())
+
+def escape_pystache_include(test_file):
+    return "{{>" + test_file + "}}"
+
+def add_internal_props(idx, test):
+    # Assign unique identifiers to test cases and format into pystache import format
+
+    inner_props = { 
+       '__id': idx+1, 
+       '__file': escape_pystache_include(test['file']),
+       }
+    return dict(merge_dict_lists(test, inner_props))
+
 with open(projectfile) as configuration_data:
     project_data = yaml.load(configuration_data)
 
@@ -33,14 +48,11 @@ with open(projectfile) as configuration_data:
         with open(import_from) as common_configuration_data:
             loaded_data = yaml.load(common_configuration_data)
 	    # Combine previously import_from data with newly loaded import_from data (last one takes precedence)
-            common_data = {key: value for (key, value) in (list(common_data.items()) + list(loaded_data.items()))}
+            common_data = { key: value for (key, value) in merge_dict_lists(common_data, loaded_data) }
 
     # Combine import_from and project_data (project data takes priority)
-    data = {key: value for (key, value) in (list(common_data.items()) + list(project_data.items()))}
-    # Assign unique identifiers to test cases and format into pystache import format
-    tests = [ { '__id': idx+1, '__file': "{{>" + test['file'] + "}}" } for idx, test in enumerate(data['included_tests'])]
-    # TODO: Merge dicts into single list so fields from YAML are saved in included_tests for later
-    data['included_tests'] = tests
+    data = { key: value for (key, value) in merge_dict_lists(common_data, project_data) }
+    data['included_tests'] = [ add_internal_props(idx, test) for idx, test in enumerate(data['included_tests'])]
     # timestamp for when we created the document
     data['__generation_timestamp'] = datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M')
 #    print(yaml.dump(data))
