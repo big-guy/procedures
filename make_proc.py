@@ -69,8 +69,12 @@ except OSError as e:
     pass
 shutil.copytree('css', outputdir+'css')
 
+lib_dir = outputdir+'lib/'
+if not os.path.isdir(lib_dir):
+    os.mkdir(lib_dir)
+
 for js_file in data['js_files']:
-    shutil.copy(js_file, outputdir + 'lib')
+    shutil.copy(js_file, lib_dir)
 
 with open(outputfile, 'w') as out:
     out.write(output)
