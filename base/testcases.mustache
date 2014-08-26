@@ -1,0 +1,27 @@
+## Test Cases ##
+
+Execute the following test cases to verify the listed requirements.
+
+{{#unescape}}
+{{#included_tests}}
+
+<a name="test_case_{{__id}}"></a>
+
+{{{__file}}}
+
+<form>
+   <fieldset>
+      <legend>Results</legend>
+      <input type="radio" name="tc{{__id}}" value="Pass" id="tc{{__id}}Pass" checked="false"/>
+      <label for="tc{{__id}}Pass">Pass</label>
+      <input type="radio" name="tc{{__id}}" value="Fail" id="tc{{__id}}Fail" checked="false"/>
+      <label for="tc{{__id}}Fail">Fail</label>
+      <input type="radio" name="tc{{__id}}" value="Skip" id="tc{{__id}}Skip" checked="true"/>
+      <label for="tc{{__id}}Skip">Skip</label>
+      <textarea rows="5" cols="80" name="tc{{__id}}comment"> </textarea><br/> 
+   </fieldset>
+</form>
+
+{{/included_tests}}
+{{/unescape}}
+
