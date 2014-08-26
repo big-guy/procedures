@@ -1,4 +1,38 @@
-{{>frontmatter}}
+# Setup  
+
+<p/>
+<form class="plaintext">
+   <fieldset>
+      <legend>Procedure Controls</legend>
+      <label for="resultsLoad">Load</label>
+      <input type="file" name="resultsLoad" id="resultsLoad"/><br>
+      <label for="testRunDescription">Run Description</label>
+      <input type="text" name="testRunDescription" id="testRunDescription"/><br>
+      <a href="#download">DOWNLOAD RESULTS</a> 
+   </fieldset>
+</form>
+
+# {{title}} #
+
+[TOC]
+
+<div markdown="1" class="progress">
+
+|Progress                    |
+| -------------------------- |
+| {:#passed_cases .passed}   |
+| {:#failed_cases .failed}   |
+| {:#skipped_cases .skipped} |
+
+</div>
+
+## Test Overview ##
+
+|Name of Procedure                     |Author          |
+| ------------------------------------ | :------------: |
+|{{title}}                             | {{author}}     |
+
+{{>overview}}
 
 {{>requirements}}
 

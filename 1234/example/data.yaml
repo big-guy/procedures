@@ -9,7 +9,7 @@ search_dirs:
    - common/example
    - base 
 
-title: Example Procedure
+title: Final Acceptance Test (Example Procedure)
 author: sterling
 
 included_tests: 
