@@ -25,3 +25,4 @@ included_tests:
      title: Example of Anyone
    - file: common
      title: Example of Noone
+     config: data.yaml
