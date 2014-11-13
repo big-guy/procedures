@@ -1,0 +1,51 @@
+make_proc.py -- generator script
+first arg - path to yaml input file
+second arg - output directory
+
+1234/example/data.yaml -- example procedure configuration file
+1234/example/example_tc.mustache -- example test case 
+1234/example/requirements.yaml -- list of requirements in YAML
+
+base:
+Base files that all procedures would use.
+footer.mustache -- bottom portion of page (contains timestamp)
+html.mustache -- "glue" template to piece together all of the other mustache files
+markdown.mustache -- "glue" template to piece together all of the markdown files 
+overview.mustache -- top-level overview description of procedure
+requirements.mustache -- requirements listing template
+setup.mustache -- template for setup steps for overall procedure
+signature.mustache -- sign off page template
+testcases.mustache -- template for all test cases (adds pass/fail controls)
+
+common/data.yaml -- common setup directives
+common/example/common.mustache -- example test case from "common" directory
+
+css: -- style info
+print.css
+style.css
+theme.css
+
+lib: -- javascript libs
+jquery-1.10.2.min.js -- minified jquery
+tcmath.js -- homegrown hacky javascript to demonstrate the auto-counting features
+
+What works:
+Not much
+
+What can you do:
+Using data.yaml input file, describe list of test cases.
+Using markdown formatted mustache templates, write test case.
+Run make_proc.py to generate a static page.
+
+TODO:
+Import/export test runs
+Look fancier
+Make javascript less horrible
+Separate P/F/NT for each step?
+Embed css and javascript into a single page (makes procedure completely self contained/portable)
+
+NOTES:
+
+base should almost never change.
+common should contain test cases that are predominately shared.
+site-specific directories should be limited to input file (data.yaml) and very specific test case files.
